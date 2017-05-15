@@ -8,9 +8,152 @@
 
 <body>
 
-<h1>An idiot's way to install caffe with gpu-support in ubuntu</h1>
+<h1>An idiot's guide to install Caffe with gpu-support in Ubuntu-16.04</h1>
+
+<h2>Step-1 Install latest Nvidia-graphics driver</h2>
+<p>
+One nice working method is to do this in Ubuntu is to install via Additional Driver option in Software Settings.
+</p>
+<hr>
 
 
+<h2>Step-2 Change default gcc version to 4.8 or 4.9</h2>
+<p>
+
+<div>
+<em>
+
+
+</em>
+
+</div>
+
+
+</p>
+
+
+<h2>Step-3 Install CUDA-8.0</h2>
+<p>
+Among many options available I prefer using local installation via .deb package as follow:-
+<div><em>
+sudo dpkg -i cuda****.deb
+sudo apt update
+sudo apt install cuda</em>
+</div>
+After installation add Cuda to path of the system.
+To do this open .bashrc file in home directory with admin privileges and in the end of the file append following:-
+<div>
+<em>
+xport CUDA_HOME=/usr/local/cuda-8.0
+export LD_LIBRARY_PATH=${CUDA_HOME}/lib64 
+PATH=${CUDA_HOME}/bin:${PATH} 
+export PATH
+</em>
+
+</div>
+Reopen the terminal and check the installation of cuda by running following command in terminal:-
+<div>
+<em> nvcc -v </em>
+</div>
+</p>
+<hr>
+
+
+<h2>Step-4 Install Nvidia's CuDNN deep learning library</h2>
+<p>
+Go to nvidia's site and login with developer account(if you don't have it by now,then make one). 
+Download CuDNN version 5.1 for Cuda-8.0
+Extract the .tgz and copy content inside it to Cuda directories as follow:-
+<div>
+<em>
+sudo cp -P include/cudnn.h /usr/include
+sudo cp -P lib64/libcudnn* /usr/lib/x86_64-linux-gnu/
+sudo chmod a+r /usr/lib/x86_64-linux-gnu/libcudnn*
+</em>
+</div>
+</p>
+<hr>
+
+
+<h2>Step-5 Install various dependencies</h2>
+<p>
+Several packages are required for installing Caffe. They are listed at <a href = "http://caffe.berkeleyvision.org/install_apt.html">official site of Caffe</a>.
+
+</p>
+<hr>
+
+
+<h2>Step-6 Here comes the trick part</h2>
+<p>
+
+
+</p>
+<hr>
+
+
+<h2>Step-7 Download Caffe</h2>
+<p>
+
+
+
+</p>
+<hr>
+
+
+<h2>Step-8 Wait! Do you need a Makefile?</h2>
+<p>
+
+<div>
+<em>
+
+
+</em>
+
+</div>
+
+</p>
+<hr>
+
+
+<h2>Step-9 Compile</h2>
+<p>
+Go to ~/caffe/ and execute following commands-
+<div>
+<em>
+make all
+make test
+make runtest
+make pycaffe
+</em>
+
+</div>
+
+</p>
+<hr>
+
+
+<h2>Step-10 Add Python path</h2>
+<p>
+Again open our beloved .bashrc with admin privileges and append following:-
+<div>
+<em>
+
+</em>
+</div>
+</p>
+<hr>
+
+
+<h2>Tasting the Caffe</h2>
+<p>
+Open python interpreter or jupyter notebook and run
+<div>
+<em>
+import caffe
+</em>
+</div>
+If you don't get any error messages, I believe you are as lucky as I am and you Caffe is brewed well. A good enough reason to celebrate. Cheers!!!
+</p>
 
 </body>
 
