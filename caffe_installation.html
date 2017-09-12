@@ -11,7 +11,7 @@
 <h1>An Easy Way to Install Caffe with Gpu-Support in Ubuntu-16.04</h1>
 <hr>
 <h2>Important Note</h2>
-<p>All the changes in gcc are required if system default is gcc-6.3, which appears in Ubuntu-17.<br>
+<p>All the changes in gcc are required if system default is gcc-6.x or above, which appears in Ubuntu-17.<br>
 If Ubuntu-16.04 has gcc-5.4 by default, one can ignore all steps concerning gcc configuration.<br></p>
 
 <h2>Step-1 Install latest Nvidia-graphics driver</h2>
@@ -71,7 +71,7 @@ Reopen the terminal and check the installation of cuda by running following comm
 
 <h2>Step-4 Install Nvidia's CuDNN deep learning library</h2>
 <p>
-Go to nvidia's site and login with developer account(if you don't have it by now,then make one). 
+Go to nvidia's site and login with developer account(if you don't have it by now,then make one).
 Download CuDNN version 5.1 for Cuda-8.0
 Extract the .tgz and copy content inside it to Cuda directories as follow:-
 <div>
@@ -114,7 +114,7 @@ sudo apt-get update<br>
 sudo apt-get install gcc-5 g++-5<br>
 
 </em>
-</div> 
+</div>
 <br>
 Now we need to do three things-<br>
 <b><em>[1]</em> Make gcc-5 as default gcc compiler so that we do not get error while compiling caffe</b><br>.
