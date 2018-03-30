@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+
+<head> 
+    <title> Install LAMP </title>
+    
+</head>
+
+
+<body>
+
+<h2> Install LAMP in Ubuntu 16.04 </h2>
+
+<hr>
+
+<h4> Install Apache Server </h4>
+
+<div>
+
+    <p> sudo apt-get install apache2 -y </p>
+    <br> 
+    
+    <p> sudo systemctl start apache2.service </p>
+    <br>
+    
+</div>
+
+<h4> Install MySql Database </h4>
+
+<div>
+    
+    <p> sudo apt-get install mysql-server -y </p>
+    <br>
+    
+    <p> sudo /usr/bin/mysql_secure_installation </p>
+    <br>
+    
+</div>
+
+<h4> Install PHP </h4>
+
+<div> 
+
+    <p> sudo apt-get install php -y </p>
+    <br>
+    
+    <h5> Install PHP Extensions </h5>
+    <p> sudo apt-get install -y php-{bcmath,bz2,intl,gd,mbstring,mcrypt,mysql,zip} && sudo apt-get install libapache2-mod-php  -y </p>
+    <br>
+    
+</div>
+
+<h4> Start Apache and MySql on Boot </h4>
+
+<div>
+    
+    <p> sudo systemctl enable apache2.service </p>
+    <br>
+    
+    <p> sudo systemctl enable mysql.service </p>
+    <br>
+    
+    <p> sudo systemctl restart apache2.service </p>
+    <br>
+    
+</div>
+
+<hr>
+
+<h4> Credits:: </h4>
+
+<a href='https://www.vultr.com/docs/how-to-install-apache-mysql-and-php-on-ubuntu-16-04'><i>vultr.com</i></a>
+    
+
