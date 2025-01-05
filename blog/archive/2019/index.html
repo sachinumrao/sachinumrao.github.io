@@ -512,6 +512,17 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    2019
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -521,6 +532,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#useful-python-libraries-for-machine-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Useful Python Libraries for Machine Learning
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keyword-extraction" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keyword Extraction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setting-up-ubuntudebian-system-for-deep-learning" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setting Up Ubuntu/Debian System for Deep Learning
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -691,117 +748,13 @@
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="useful-python-libraries-for-machine-learning"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/">Useful Python Libraries for Machine Learning</a></h2>
-<p><img alt="deep learning libraries" src="../../../assets/dl_libs.png" />
-<em>Image Credit: https://www.analyticsindiamag.com</em></p>
-<p>If you are a new to the field of machine learning, you can get overwhelmed 
-with the variety of sub-fields available under the umbrella of machine 
-learning. For each subfield, there are specific libraries to help you 
-with getting the task done. In this blog, we will glance over the 
-different libraries and their use cases.</p>
-<h4 id="general-purpose-machine-learning-libraries"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#general-purpose-machine-learning-libraries">General Purpose Machine Learning Libraries</a></h4>
-<h5 id="scikit-learn"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#scikit-learn">Scikit-Learn</a></h5>
-<p>Scitkit-learn provides all popular machine learning algorithms and 
-functions for data transformation to error analysis pre-built into it. 
-It is a recommended library for getting started with machine learning. 
-One can tweak the parameters in algortihms and see the changes in the 
-performance of model.</p>
-<h5 id="tensorflow"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#tensorflow">Tensorflow</a></h5>
-<p>Most of the people take tensorflow as deep learning library but at its core 
-it just converts mathematical operations into a computational grpahs. 
-Hence, any machine learning algorithm can be developed in tensorlfow. 
-The implementations of Logistic Regression and Linear Regression in 
-tensorlfow can be easily found in web.</p>
-<h4 id="working-with-videosimages"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#working-with-videosimages">Working with Videos/Images</a></h4>
-<h5 id="opencv"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#opencv">OpenCV</a></h5>
-<p>OpenCV is the most popular library for working with images and videos. 
-It provides all basic operations to be executed on images. 
-It enables us to control webcam and take images or video-feed from it. 
-Hence, it becomes suitable for live projects of object detection, 
-face recognition etc.</p>
-<h5 id="scikit-image"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#scikit-image">Scikit-Image</a></h5>
-<p>It provides optimized image transformation operations.</p>
-<h5 id="dlib"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#dlib">DLib</a></h5>
-<p>It provides deep learning based implementations for face detection and 
-object detection.</p>
-<h4 id="working-with-text-data"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#working-with-text-data">Working with Text Data</a></h4>
-<h5 id="nltk"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#nltk">NLTK</a></h5>
-<p>NLTK (Natural Language TooKit) provides basic operations for text 
-pre-processing.</p>
-<h5 id="spacy"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#spacy">Spacy</a></h5>
-<p>Spacy provides all text pre-processing functions along with deep 
-learning based models for various NLP tasks.</p>
-<h5 id="stanford-nlp"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#stanford-nlp">Stanford-NLP</a></h5>
-<p>It is developed in Stanford as evidnet from name. It is a cutting edge 
-library which features latest developments in the field of NLP.</p>
-<h5 id="gensim"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#gensim">Gensim</a></h5>
-<p>Gensim contains various trained models for word-embeddings and 
-topic-modelling.</p>
-<h4 id="reinforcement-learning"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#reinforcement-learning">Reinforcement Learning</a></h4>
-<h5 id="openai-gym"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#openai-gym">OpenAI Gym</a></h5>
-<p>For most of reinforcement leraning tasks, an enviornment is required 
-where agent can perform actions and learn. Gym provides various 
-environments where one can train agents. The environment includes atari games, 
-robotic simulations and alot of other fancy things.</p>
-<h5 id="pygame"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#pygame">PyGame</a></h5>
-<p>If you want to create a new environment (or a new game) and train agent in 
-it, you can build it with PyGame.</p>
-<h5 id="keras-rl"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#keras-rl">Keras-RL</a></h5>
-<p>Keras-RL is deep reinforcement learning library. It provides deep 
-architectures which can be trained in Gym or other environment. 
-It features popular algorithms such as DQN.</p>
-<h4 id="deep-learning-libraries"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#deep-learning-libraries">Deep Learning Libraries</a></h4>
-<h5 id="theano"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#theano">Theano</a></h5>
-<p>Theano was developed by MILA and it is predecessor of all deep 
-learning frameworks. But now MILA has stopped its development 
-after 1.0 release.</p>
-<h5 id="tensorflow_1"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#tensorflow_1">Tensorflow</a></h5>
-<p>Tensorflow is the most popular library for machine learning. It emphasized on the concept of computational graphs. It is well suited for distributed computing. It is supported by Google.</p>
-<h5 id="pytorch"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#pytorch">Pytorch</a></h5>
-<p>Pytorch is being developed by Facebook and it is the main rival of 
-Tensorflow. Pytorch also provides a dynamic graph execution.</p>
-<h5 id="keras"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#keras">Keras</a></h5>
-<p>Keras is a high-level wrapper on existing deep learning frameworks. 
-It supports theano, tensorflow and mxnet as its backends. 
-It is recommended for beginners as deep learning architectures 
-can be made very easily, quickly and without in-depth knowledge 
-of neural networks.</p>
-<h4 id="other-deep-learning-libraries-"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#other-deep-learning-libraries-">Other Deep Learning Libraries:-</a></h4>
-<h5 id="h2o"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#h2o">H2O</a></h5>
-<p>Supported by H2O.ai which provide several deep learning solutions such as 
-Driverless AI</p>
-<h5 id="caffe"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#caffe">Caffe</a></h5>
-<p>It was originally developed by Berkley AI Research (BAIR) group, 
-but now it is advanced by Facebook</p>
-<h5 id="cntk"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#cntk">CNTK</a></h5>
-<p>A deep learning library provided by Microsift</p>
-<h5 id="mxnet"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#mxnet">MXNet</a></h5>
-<p>MXNet is supported by Amazon</p>
-<p>Most of the  deep learing libraries have two different versions for CPU 
-and GPU. The GPU version of the library takes advantage of CUDA 
-acceleration and performance gain is enormous. So, if you have Nvidia 
-graphics card, setup CUDA and install gpu version of the library.</p>
-<p><br></p>
-<h4 id="other-supporting-libraries"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#other-supporting-libraries">Other Supporting Libraries</a></h4>
-<h5 id="numpy"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#numpy">Numpy</a></h5>
-<p>Numpy is a library for processing numerical data. It is useful in data 
-pre-processing step. It gives good performance when vectorization is used. 
-It also provides very optimized implementations of common mathematical 
-operations.</p>
-<h5 id="pandas"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#pandas">Pandas</a></h5>
-<p>Pandas is used for mix data as it can handle strings and numerical data as 
-well. Several useful transformations are already implemented (such as fixing 
-null values, one-hot encoding) and easily handles datetime data. 
-It has become popular for data preprocessing.</p>
-<h5 id="scipy"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#scipy">Scipy</a></h5>
-<p>Scipy provides complex mathematical operations such as convolution and 
-matrix inversions along with various statistical functions. It also 
-serves as backend of Scikit-Learn and Scikit-Image.</p>
-<h5 id="matplotlib"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#matplotlib">Matplotlib</a></h5>
-<p>Matplotlib is most popular library for data visualization. 
-Data visualization is helpful in analyzing the data during EDA 
-(Exploratory Data Analysis).</p>
-<h4 id="other-popular-libraries-for-data-visualization-"><a class="toclink" href="../../2019/08/15/useful-python-libraries-for-machine-learning/#other-popular-libraries-for-data-visualization-">Other popular libraries for data visualization:-</a></h4>
-<p>Bokeh, Plotly, Seaborn, Graphviz</p>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2019/08/15/useful-python-libraries-for-machine-learning/">
+          Continue reading
+        </a>
+      </nav>
     
   </div>
 </article>
@@ -828,57 +781,13 @@ Data visualization is helpful in analyzing the data during EDA
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="keyword-extraction"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/">Keyword Extraction</a></h2>
-<p><img alt="keyword extraction" src="../../../assets/keyword_extraction.jpeg" />
-<em>Image Credit: www.adaringadventure.com</em></p>
-<h4 id="keyword-extraction-using-rake"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#keyword-extraction-using-rake">Keyword Extraction using RAKE</a></h4>
-<h5 id="1-why-perform-keyword-extraction"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#1-why-perform-keyword-extraction">1. Why perform keyword extraction?</a></h5>
-<ul>
-<li>Reduces the dimensionality of text </li>
-<li>Find summery of text (<em>What this documents is about?</em>)</li>
-<li>Fetch similar documents in <em>Information Retrieval</em> System</li>
-<li>Classify Documents when there are large number of categories</li>
-</ul>
-<h5 id="2-how-to-perform-keyword-extraction"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#2-how-to-perform-keyword-extraction">2. How to perform keyword extraction?</a></h5>
-<div class="language-text highlight"><pre><span></span><code>I. Candidate Selection
 
-II. Property Calculation
-
-III. Scoring of potential keywords and final selection
-</code></pre></div>
-<h5 id="3-rapid-automatic-keyword-extraction-rake"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#3-rapid-automatic-keyword-extraction-rake">3. Rapid Automatic Keyword Extraction (RAKE)</a></h5>
-<ul>
-<li>
-<p>Use punctuations and stopwords as boundaries. Keyword phrases are assumed to be lying between these boundaries (<em>in ideal case tokens should be stemmed as well before this step</em>). These words are often called <strong>Candidate Words/Phrases</strong>.</p>
-</li>
-<li>
-<p>RAKE computes the properties of each candidate, which is the sum of score for each word in phrase. The words are scored according to their frequency and typical length of candidate phrase in which they appear.</p>
-</li>
-<li>
-<p>Rank keywords based on RAKE score</p>
-</li>
-</ul>
-<h5 id="4-error-estimation"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#4-error-estimation">4. Error Estimation</a></h5>
-<ul>
-<li>
-<p>Match keywords obtained from model with keywords hand assigned to the document.</p>
-</li>
-<li>
-<p>Precision : Percentage of correct keywords among those extracted</p>
-</li>
-<li>
-<p>Recal : Percentage of correctly extracted keywords among all correct ones</p>
-</li>
-</ul>
-<h4 id="additional-notes"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#additional-notes">Additional Notes</a></h4>
-<h5 id="advantages-of-rake"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#advantages-of-rake">Advantages of RAKE</a></h5>
-<div class="language-text highlight"><pre><span></span><code>I. Doamin Independence
-
-II. Good Precision
-</code></pre></div>
-<h5 id="scoring-in-rake"><a class="toclink" href="../../2019/08/15/keyword-extraction-methods/#scoring-in-rake">Scoring in RAKE</a></h5>
-<p>Score(word) = Degree(word) / Frequency(word)</p>
-<p>Frequency(word) = Number of times word occurs in document</p>
-<p>Degree(word) = Similar to degree of node in a graph. It is number of times a certain word co-occurs with other candidate keyword </p>
+    
+      <nav class="md-post__action">
+        <a href="../../2019/08/15/keyword-extraction-methods/">
+          Continue reading
+        </a>
+      </nav>
     
   </div>
 </article>
@@ -905,99 +814,13 @@ II. Good Precision
   </header>
   <div class="md-post__content md-typeset">
     <h2 id="setting-up-ubuntudebian-system-for-deep-learning"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/">Setting Up Ubuntu/Debian System for Deep Learning</a></h2>
-<p><img alt="ubuntu" src="../../../assets/ubuntu-logo.png" />
-<em>Image Credit: https://mytechshout.com</em></p>
-<p>As I started my journey to learn coding, I was introduced to Linux by my mentors. 
-Primarily Linux was used by programmers but now a days it has garnered 
-popularity in all domains. There are many Linux based operating  systems 
-available out there but Ubuntu has become most used UNIX based OS. 
-It is widely used in industries and universities. In this blog we will 
-discuss what applications and tools are required/suggested to setup in a 
-fresh ubuntu installation for working on machine learning and deep 
-learning projects.</p>
-<h4 id="update-the-system"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#update-the-system">Update the System</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt update
-$ sudo apt upgrade
-</code></pre></div>
-<h4 id="basic-utilities"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#basic-utilities">Basic Utilities</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt install vim gedit-common
-$ sudo apt install ubuntu-restricted-extras
-$ sudo apt install vlc
-$ sudo apt install classicmenu-indicator
-$ sudo apt install redshift redshift-gtk
-$ sudo apt install terminator
-$ sudo apt install unity-tweak-tool
-</code></pre></div>
-<h4 id="install-google-chrome-from-deb-package"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-google-chrome-from-deb-package">Install Google Chrome from .deb package</a></h4>
-<h4 id="notes-and-others"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#notes-and-others">Notes and Others</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt install nixnote2 #(To connect with evernote)
-</code></pre></div>
-<h4 id="install-simple-note-from-deb-package-take-notes-in-cross-platform-app"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-simple-note-from-deb-package-take-notes-in-cross-platform-app">Install Simple Note from .deb package (Take notes in cross platform app)</a></h4>
-<h4 id="download-medium-desk-and-extract-it-to-opt-folder-read-blogs-on-medium"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#download-medium-desk-and-extract-it-to-opt-folder-read-blogs-on-medium">Download Medium Desk and extract it to /opt folder (Read blogs on medium)</a></h4>
-<h4 id="development-tools"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#development-tools">Development Tools</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt install gcc g++
-$ sudo apt install cmake build-essential
-$ sudo apt install python-pip python-dev (for python3 use: python3-pip , python3-dev
-$ sudo apt install openjdk-8-jre
-$ sudo apt install git
-</code></pre></div>
-<h4 id="text-editors"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#text-editors">Text Editors</a></h4>
-<p>Install Sublime Text3 from <a href="https://www.sublimetext.com/3">official site</a></p>
-<p>Download <strong>Menlo font</strong> (Its my favorite font but it is not available in Ubuntu, so you have to install opensource version)</p>
-<h4 id="install-vs-code-site"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-vs-code-site">Install VS Code <a href="https://code.visualstudio.com/">site</a></a></h4>
-<h4 id="python-for-data-science"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#python-for-data-science">Python for Data Science</a></h4>
-<h5 id="1-make-virtual-environment"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#1-make-virtual-environment">1. Make Virtual Environment</a></h5>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt install python-virtualenv
-$ mkdir ~/env_name &amp;&amp; cd ~/env_name
-$ virtualenv env_name
-</code></pre></div>
-<h5 id="2-activate-virtual-environment"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#2-activate-virtual-environment">2. Activate virtual environment</a></h5>
-<div class="language-text highlight"><pre><span></span><code>$ source ~/env_name/bin/activate
-</code></pre></div>
-<h5 id="3-deactivate-virtual-environment"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#3-deactivate-virtual-environment">3. Deactivate virtual environment</a></h5>
-<div class="language-text highlight"><pre><span></span><code>$ deactivate
-</code></pre></div>
-<h4 id="install-python-libraries"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-python-libraries">Install Python Libraries</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ pip install numpy matplotlib pandas
-$ pip install scipy scikit-learn scikit-image pillow
-$ pip install jupyter jupyterlab
-$ pip install nltk
-$ pip install spacy
-$ pip install tensorflow keras
-$ pip install xgboost
-</code></pre></div>
-<h4 id="install-cuda"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-cuda">Install CUDA</a></h4>
-<h5 id="1-install-nvidia-graphics-driver-from-software-updates"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#1-install-nvidia-graphics-driver-from-software-updates">1. Install Nvidia Graphics Driver from Software &amp; Updates</a></h5>
-<p>Download cuda_x.deb packages <br>
-Download cudnn_y.deb packages <br></p>
-<div class="language-text highlight"><pre><span></span><code>$ sudo dpkg -i cuda_x.deb
-$ sudo apt update
-$ sudo apt install cuda
-$ sudo apt upgrade
-</code></pre></div>
-<h5 id="2-add-cuda-in-path"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#2-add-cuda-in-path">2. Add Cuda in Path</a></h5>
-<p>Add following path to ~/.bashrc file</p>
-<div class="language-text highlight"><pre><span></span><code>export CUDA_HOME=/usr/local/cuda-x.y
-export LD_LIBRARY_PATH=${CUDA_HOME}/lib64
-PATH=${CUDA_HOME}/bin:${PATH}
-export PATH
-</code></pre></div>
-<p>(where x and y are release numbers e.g. 7.5 or 8.0)</p>
-<p>Now we need to install Nvidia’s library for deep learning CuDNN for which 
-you need to make developer’s account in Nvidia. Download the required 
-cuddnn*.deb file.</p>
-<div class="language-text highlight"><pre><span></span><code>$ sudo dpkg -i cudnn*.deb
-</code></pre></div>
-<h4 id="install-deep-learning-frameworks"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-deep-learning-frameworks">Install Deep Learning Frameworks</a></h4>
-<div class="language-text highlight"><pre><span></span><code>$ sudo apt install cuda-command-line-tools
-</code></pre></div>
-<h5 id="add-following-lines-to-the-bashrc-file"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#add-following-lines-to-the-bashrc-file">Add following lines to the ~/.bashrc file</a></h5>
-<div class="language-text highlight"><pre><span></span><code>export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
-</code></pre></div>
-<h6 id="install-tensorflow-gpu"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-tensorflow-gpu">Install Tensorflow-GPU</a></h6>
-<div class="language-text highlight"><pre><span></span><code>$ sudo pip install tensorflow-gpu keras
-</code></pre></div>
-<h6 id="install-pytorch-from-official-site"><a class="toclink" href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/#install-pytorch-from-official-site">Install Pytorch from <a href="https://pytorch.org/">official site</a></a></h6>
+
+    
+      <nav class="md-post__action">
+        <a href="../../2019/08/15/setting-up-ubuntudebian-system-for-deep-learning/">
+          Continue reading
+        </a>
+      </nav>
     
   </div>
 </article>
@@ -1042,8 +865,16 @@ cuddnn*.deb file.</p>
     
     
     
-    <a href="" target="_blank" rel="noopener" title="" class="md-social__link">
+    <a href="https://x.com/umrao_sachin" target="_blank" rel="noopener" title="Twitter" class="md-social__link">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://www.linkedin.com/in/sachin-umrao-12b7749a/" target="_blank" rel="noopener" title="Linkedin" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
     </a>
   
 </div>
